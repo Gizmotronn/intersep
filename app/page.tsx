@@ -5,6 +5,8 @@ import LogoutButton from '../components/LogoutButton';
 import SupabaseLogo from '../components/SupabaseLogo';
 import NextJsLogo from '../components/NextJsLogo';
 import { useSession } from '@supabase/auth-helpers-react';
+import BankSelection from '@/components/Banks/ChooseBank';
+import ScamChecker from '@/components/Requests/QuickScamCheck';
 
 export const dynamic = 'force-dynamic'
 
@@ -74,6 +76,8 @@ export default async function Index() {
           <div className="flex flex-col items-center mb-4 lg:mb-12">
             Welcome
           </div>
+          <BankSelection />
+          <ScamChecker/>
         </div>
       </div>
     )
