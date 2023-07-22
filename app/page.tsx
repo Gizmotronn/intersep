@@ -77,7 +77,7 @@ export default async function Index() {
             Welcome
           </div>
           <BankSelection />
-          <ScamChecker/>
+          <ScamChecker />
         </div>
       </div>
     )
