@@ -7,6 +7,7 @@ import NextJsLogo from '../components/NextJsLogo';
 import { useSession } from '@supabase/auth-helpers-react';
 import BankSelection from '@/components/Banks/ChooseBank';
 import ScamChecker from '@/components/Requests/QuickScamCheck';
+import PromptForm from '@/components/Requests/PromptCheck';
 
 export const dynamic = 'force-dynamic'
 
@@ -78,6 +79,7 @@ export default async function Index() {
           </div>
           <BankSelection />
           <ScamChecker />
+          <PromptForm />
         </div>
       </div>
     )
